@@ -1,0 +1,14 @@
+{
+  "name": "amath-website-root",
+  "private": true,
+  "workspaces": [
+    "amath-website"
+  ],
+  "scripts": {
+    "dev:stop": "npx --yes kill-port 3000",
+    "dev": "npm run dev -w amath-website",
+    "build": "npm run build -w amath-website",
+    "start": "npm run start -w amath-website",
+    "lint": "npm run lint -w amath-website"
+  }
+}
