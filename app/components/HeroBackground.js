@@ -19,7 +19,7 @@ const EQUATIONS = [
   { text: '16 ÷ 2 = 8', left: '65%', top: '52%', rotate: 4, size: 'clamp(0.92rem, 2vw, 1.4rem)', tone: 'purple', delay: 4.5, duration: 16 },
 ];
 
-const PARTICLE_COUNT = 48;
+const PARTICLE_COUNT = 36;
 
 export default function HeroBackground({ bgAlt }) {
   const particlesRef = useRef(null);
