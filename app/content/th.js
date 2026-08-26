@@ -144,7 +144,7 @@ export const site = {
 
   footer: {
     copyright: (year) =>
-      `© ${year} ${site.programName} (${site.shortName}) สงวนลิขสิทธิ์`,
+      `© ${year} โปรแกรมเกมกลยุทธ์การต่อสมการตัวเลข (Amateur Mathematician) สงวนลิขสิทธิ์`,
   },
 
   metadata: {

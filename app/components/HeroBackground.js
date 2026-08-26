@@ -54,7 +54,9 @@ export default function HeroBackground({ bgAlt }) {
     }
 
     return () => {
-      container.innerHTML = '';
+      while (container.firstChild) {
+        container.removeChild(container.firstChild);
+      }
     };
   }, []);
 
