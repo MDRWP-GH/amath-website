@@ -13,7 +13,8 @@ export const site = {
   },
 
   hero: {
-    badge: 'เกมเดสก์ท็อป Windows — ไฟล์ติดตั้งเร็วๆ นี้',
+    badge: 'เกมเดสก์ท็อป Windows — ดาวน์โหลดได้แล้ว',
+    badgePending: 'เกมเดสก์ท็อป Windows — ไฟล์ติดตั้งเร็วๆ นี้',
     titleBefore: 'เกมกลยุทธ์ต่อสมการตัวเลข',
     titleHighlight: 'Amateur Mathematician',
     description:
@@ -120,14 +121,23 @@ export const site = {
     titleBefore: 'พร้อมเล่น',
     titleHighlight: 'เอแมทแล้วหรือยัง?',
     subtitle:
-      'ติดตั้ง Amateur Mathematician บน Windows เพื่อสร้างห้อง เข้าร่วมแข่งขัน ฝึกในบทสอนเล่น และเก็บประวัติการแข่งขัน',
+      'ดาวน์โหลด Setup.exe เพื่อติดตั้ง Amateur Mathematician บน Windows สร้างห้อง เข้าร่วมแข่งขัน ฝึกในบทสอนเล่น และเก็บประวัติการแข่งขัน',
     subtitlePending:
       'โปรแกรมเกมกำลังอยู่ระหว่างการพัฒนา ไฟล์ติดตั้งสำหรับ Windows จะเปิดให้ดาวน์โหลดจากหน้านี้เมื่อพร้อม',
     unavailableNotice:
       'ไฟล์ติดตั้งยังไม่พร้อมให้ดาวน์โหลดในขณะนี้ ทีมพัฒนากำลังจัดทำเวอร์ชันสำหรับ Windows — กรุณากลับมาที่หน้านี้อีกครั้งในภายหลัง',
     cta: 'ดาวน์โหลดสำหรับ Windows',
     ctaPending: 'ยังไม่พร้อมให้ดาวน์โหลด',
-    fileHint: 'ไฟล์เมื่อเปิดให้ดาวน์โหลด:',
+    fileHint: 'ไฟล์ที่ดาวน์โหลด:',
+    fileHintPending: 'ไฟล์เมื่อเปิดให้ดาวน์โหลด:',
+    installTitle: 'วิธีติดตั้ง',
+    installSteps: [
+      'ดาวน์โหลด Setup.exe จากปุ่มด้านบน',
+      'เปิดไฟล์ที่ดาวน์โหลดแล้วบนเครื่อง Windows',
+      'ทำตามขั้นตอนตัวติดตั้ง เพื่อติดตั้งเกม สร้างทางลัด และเพิ่มตัวถอนการติดตั้ง',
+    ],
+    smartScreenNote:
+      'Windows อาจแสดงคำเตือน SmartScreen เพราะไฟล์ยังไม่ได้เซ็นใบรับรอง ให้กด More info แล้วเลือก Run anyway',
     meta: {
       platform: 'เกมเดสก์ท็อป Windows',
       modes: 'เล่นเดี่ยวและแบบทีม',
@@ -135,7 +145,7 @@ export const site = {
     },
     requirementsTitle: 'ความต้องการของระบบ (ขั้นต่ำ)',
     requirements: {
-      os: { label: 'ระบบปฏิบัติการ', value: 'Windows (32/64-bit)' },
+      os: { label: 'ระบบปฏิบัติการ', value: 'Windows 10/11 (64-bit)' },
       cpu: { label: 'หน่วยประมวลผล', value: 'Intel Core 2 Duo 2.1 GHz ขึ้นไป' },
       ram: { label: 'หน่วยความจำ', value: 'RAM 2 GB ขึ้นไป' },
       network: { label: 'เครือข่าย', value: 'จำเป็นสำหรับการแข่งขันออนไลน์' },

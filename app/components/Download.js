@@ -36,9 +36,25 @@ export default function Download() {
           <div className="download-actions">
             <DownloadCta variant="main" className="btn btn-primary download-btn-main" id="download-btn-windows" />
             <p className="download-filename">
-              {copy.fileHint} <code>{DOWNLOAD_LABEL}</code>
+              {DOWNLOAD_AVAILABLE ? copy.fileHint : copy.fileHintPending}{' '}
+              <code>{DOWNLOAD_LABEL}</code>
             </p>
           </div>
+
+          {DOWNLOAD_AVAILABLE && (
+            <div className="download-steps">
+              <p className="download-steps-title">{copy.installTitle}</p>
+              <ol>
+                {copy.installSteps.map((step) => (
+                  <li key={step}>{step}</li>
+                ))}
+              </ol>
+            </div>
+          )}
+
+          {DOWNLOAD_AVAILABLE && (
+            <p className="download-smartscreen">{copy.smartScreenNote}</p>
+          )}
 
           <div className="download-meta">
             <div className="download-meta-item">

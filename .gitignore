@@ -32,6 +32,11 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
+
+# Windows installer (too large for git)
+/public/downloads/*
+!/public/downloads/.gitkeep
 
 # vercel
 .vercel
