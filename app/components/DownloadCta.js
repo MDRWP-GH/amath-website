@@ -43,13 +43,16 @@ export default function DownloadCta({ variant = 'main', className = '', id, onNa
   if (DOWNLOAD_AVAILABLE) {
     const label =
       variant === 'hero' ? hero.downloadCta : variant === 'nav' ? site.nav.download : download.cta;
+    const isExternal = /^https?:\/\//i.test(DOWNLOAD_URL);
 
     return (
       <a
         href={DOWNLOAD_URL}
         className={className}
         id={id}
-        download={DOWNLOAD_LABEL}
+        {...(isExternal
+          ? { target: '_blank', rel: 'noopener noreferrer' }
+          : { download: DOWNLOAD_LABEL })}
       >
         <WindowsIcon size={variant === 'main' ? 22 : 20} />
         <span>{label}</span>

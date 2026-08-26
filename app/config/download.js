@@ -1,21 +1,22 @@
 /**
  * การตั้งค่าดาวน์โหลด
  *
- * เมื่อมีไฟล์แล้ว:
- * 1. วาง Setup.exe ที่ public/downloads/Setup.exe
- * 2. สร้าง .env.local แล้วตั้ง NEXT_PUBLIC_DOWNLOAD_AVAILABLE=true
+ * ค่าเริ่มต้นชี้ไปที่ GitHub Releases (v1.0 / Setup.exe)
+ * ปิดปุ่มดาวน์โหลดได้ด้วย: NEXT_PUBLIC_DOWNLOAD_AVAILABLE=false
  *
- * ถ้าไฟล์ใหญ่เกินลิมิตโฮสต์ (เช่น GitHub 100MB / Vercel)
- * อัปโหลดไป GitHub Releases แล้วตั้ง:
- * NEXT_PUBLIC_DOWNLOAD_URL=https://github.com/<user>/<repo>/releases/download/v1.0/Setup.exe
+ * สำหรับไฟล์ท้องถิ่นตอนพัฒนา:
+ * NEXT_PUBLIC_DOWNLOAD_URL=/downloads/Setup.exe
  */
 export const DOWNLOAD_FILENAME = 'Setup.exe';
 
+export const GITHUB_RELEASE_DOWNLOAD_URL =
+  'https://github.com/MDRWP-GH/amath-website/releases/download/v1.0/Setup.exe';
+
 export const DOWNLOAD_URL =
-  process.env.NEXT_PUBLIC_DOWNLOAD_URL ?? `/downloads/${DOWNLOAD_FILENAME}`;
+  process.env.NEXT_PUBLIC_DOWNLOAD_URL ?? GITHUB_RELEASE_DOWNLOAD_URL;
 
 export const DOWNLOAD_LABEL = DOWNLOAD_FILENAME;
 
 /** เปิดเป็น true เมื่อมีไฟล์ติดตั้งพร้อมให้ดาวน์โหลดแล้ว */
 export const DOWNLOAD_AVAILABLE =
-  process.env.NEXT_PUBLIC_DOWNLOAD_AVAILABLE === 'true';
+  process.env.NEXT_PUBLIC_DOWNLOAD_AVAILABLE !== 'false';
