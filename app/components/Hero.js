@@ -9,6 +9,7 @@ import { DOWNLOAD_AVAILABLE } from '../config/download';
 import { site } from '../content/th';
 
 const { hero } = site;
+const TICKER_EQUATIONS = ['7 × 8 = 56', '15 + 9 = 24', '81 ÷ 9 = 9', '12 × 3 − 6 = 30'];
 
 export default function Hero() {
   const container = useRef();
@@ -70,6 +71,16 @@ export default function Hero() {
           <div className="hero-stat">
             <div className="hero-stat-value gradient-text">{hero.stats.players.value}</div>
             <div className="hero-stat-label">{hero.stats.players.label}</div>
+          </div>
+        </div>
+
+        <div className="hero-ticker hero-anim" aria-label="ตัวอย่างสมการในเกม">
+          <div className="hero-ticker-track">
+            {[...TICKER_EQUATIONS, ...TICKER_EQUATIONS].map((equation, index) => (
+              <span key={`${equation}-${index}`} aria-hidden={index >= TICKER_EQUATIONS.length}>
+                <i />{equation}<small>VALID</small>
+              </span>
+            ))}
           </div>
         </div>
       </div>

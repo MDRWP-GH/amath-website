@@ -29,10 +29,10 @@ export default function HeroBackground({ bgAlt }) {
     if (!container) return;
 
     const colors = [
-      'rgba(108,99,255,.45)',
-      'rgba(0,210,255,.35)',
-      'rgba(255,107,157,.3)',
-      'rgba(139,131,255,.4)',
+      'rgba(245,185,66,.45)',
+      'rgba(95,194,229,.35)',
+      'rgba(126,188,86,.32)',
+      'rgba(255,218,126,.38)',
     ];
 
     for (let i = 0; i < PARTICLE_COUNT; i++) {
