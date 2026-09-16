@@ -1,7 +1,7 @@
 /**
  * การตั้งค่าดาวน์โหลด
  *
- * ค่าเริ่มต้นชี้ไปที่ GitHub Releases (v1.1 / Setup.exe)
+ * ค่าเริ่มต้นชี้ไปที่ GitHub Releases (v1.2 / Setup.exe)
  * ปิดปุ่มดาวน์โหลดได้ด้วย: NEXT_PUBLIC_DOWNLOAD_AVAILABLE=false
  *
  * สำหรับไฟล์ท้องถิ่นตอนพัฒนา:
@@ -10,7 +10,7 @@
 export const DOWNLOAD_FILENAME = 'Setup.exe';
 
 export const GITHUB_RELEASE_DOWNLOAD_URL =
-  'https://github.com/MDRWP-GH/amath-website/releases/download/v1.1/Setup.exe';
+  'https://github.com/MDRWP-GH/amath-website/releases/download/v1.2/Setup.exe';
 
 export const DOWNLOAD_URL =
   process.env.NEXT_PUBLIC_DOWNLOAD_URL ?? GITHUB_RELEASE_DOWNLOAD_URL;
