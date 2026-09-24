@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { site } from '../content/th';
 
 const { nav, brand, footer } = site;
@@ -8,7 +9,13 @@ export default function Footer() {
     <footer className="footer">
       <div className="container footer-inner">
         <div className="footer-logo">
-          <span className="logo-icon">A</span>
+          <Image
+            className="logo-icon"
+            src="/images/amath-logo.png"
+            alt=""
+            width={53}
+            height={57}
+          />
           {brand}
         </div>
 

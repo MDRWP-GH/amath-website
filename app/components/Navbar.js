@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { site } from '../content/th';
 import DownloadCta from './DownloadCta';
 
@@ -33,7 +34,14 @@ export default function Navbar() {
     <nav id="navbar" className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container navbar-inner">
         <a href="#" className="navbar-logo" aria-label={nav.homeLabel}>
-          <span className="logo-icon">A</span>
+          <Image
+            className="logo-icon"
+            src="/images/amath-logo.png"
+            alt=""
+            width={53}
+            height={57}
+            priority
+          />
           {brand}
         </a>
 
