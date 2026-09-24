@@ -1,34 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# A-Math Website
 
-## Getting Started
+เว็บไซต์ประชาสัมพันธ์และดาวน์โหลดเกม **Amateur Mathematician (A-Math)** เกมวางแผนต่อสมการตัวเลขที่ผสมทักษะคณิตศาสตร์ การวางแผน และการตัดสินใจแบบผู้เล่นหลายคน
 
-First, run the development server:
+## เกี่ยวกับเว็บไซต์
+
+เว็บไซต์นี้รวบรวมข้อมูลเกม ข่าวสารอัปเดต ลิงก์ดาวน์โหลด บทนำสำหรับผู้เล่นใหม่ และช่องทางติดต่อโครงการ
+
+## รายละเอียดเกม
+
+**Amateur Mathematician** เป็นเกมกระดานวางตัวเลขและเครื่องหมายทางคณิตศาสตร์เพื่อสร้างสมการที่ถูกต้องและทำคะแนน ผู้เล่นต้องคิดล่วงหน้า เลือกตำแหน่งวางเบี้ย และใช้โอกาสบนกระดานเพื่อพลิกสถานการณ์
+
+### จุดเด่น
+
+- ระบบต่อสมการที่อาศัยทั้งความรู้คณิตศาสตร์และการวางแผน
+- การแข่งขันหลายคนผ่านเครือข่าย LAN พร้อมห้องแข่งขันและล็อบบี้
+- ระบบบทสอนเล่นสำหรับเรียนรู้กติกาและคำสั่งทีละขั้น
+- HUD และนาฬิกาการแข่งขันสำหรับติดตามตาเล่นและเวลาที่เหลือ
+- บันทึกบัญชีผู้เล่น ผลการแข่งขัน และประวัติแมตช์
+
+## การดาวน์โหลด
+
+ดาวน์โหลดเกมเวอร์ชันล่าสุดจากหน้า [Releases](https://github.com/MDRWP-GH/amath-website/releases) แล้วเลือก `Setup.exe` เพื่อติดตั้งบน Windows 64-bit
+
+## การรันเว็บไซต์สำหรับพัฒนา
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+เปิด [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## เทคโนโลยี
 
-## Learn More
+- [Next.js](https://nextjs.org/)
+- React / JavaScript / CSS
 
-To learn more about Next.js, take a look at the following resources:
+## โครงสร้างโครงการ
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `app/` — หน้าเว็บและคอมโพเนนต์
+- `public/` — รูปภาพ ไอคอน และไฟล์สาธารณะ
+- `app/config/` — การตั้งค่าลิงก์ดาวน์โหลด
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## การมีส่วนร่วม
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+หากต้องการแจ้งปัญหา เสนอแนวคิด หรือสอบถามข้อมูล สามารถเปิด Issue ใน repository นี้ได้
