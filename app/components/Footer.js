@@ -11,10 +11,10 @@ export default function Footer() {
         <div className="footer-logo">
           <Image
             className="logo-icon"
-            src="/images/amath-logo.png"
+            src="/images/amath-logo-transparent.png"
             alt=""
-            width={53}
-            height={57}
+            width={28}
+            height={28}
           />
           {brand}
         </div>

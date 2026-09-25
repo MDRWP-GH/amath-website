@@ -36,10 +36,10 @@ export default function Navbar() {
         <a href="#" className="navbar-logo" aria-label={nav.homeLabel}>
           <Image
             className="logo-icon"
-            src="/images/amath-logo.png"
+            src="/images/amath-logo-transparent.png"
             alt=""
-            width={53}
-            height={57}
+            width={36}
+            height={36}
             priority
           />
           {brand}

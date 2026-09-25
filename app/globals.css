@@ -214,8 +214,8 @@ button { cursor: pointer; font-family: inherit; }
 }
 
 .navbar-logo .logo-icon {
-  width: auto;
-  height: 38px;
+  width: 36px;
+  height: 36px;
   object-fit: contain;
 }
 
@@ -1102,8 +1102,8 @@ button { cursor: pointer; font-family: inherit; }
 }
 
 .footer-logo .logo-icon {
-  width: auto;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   object-fit: contain;
 }
 
