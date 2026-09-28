@@ -1,23 +1,22 @@
 /**
  * การตั้งค่าดาวน์โหลด
  *
- * ค่าเริ่มต้นชี้ไปที่ GitHub Releases (v1.3.1 / Setup.exe)
+ * รุ่นปัจจุบันเสิร์ฟจาก public/downloads ของเว็บไซต์โดยตรง
  * ปิดปุ่มดาวน์โหลดได้ด้วย: NEXT_PUBLIC_DOWNLOAD_AVAILABLE=false
  *
  * สำหรับไฟล์ท้องถิ่นตอนพัฒนา (ไม่ใช้ใน production):
- * NEXT_PUBLIC_DOWNLOAD_URL=/downloads/Setup.exe
+ * NEXT_PUBLIC_DOWNLOAD_URL=/downloads/A-Math-Setup-v1.3.2.exe
  */
-export const DOWNLOAD_FILENAME = 'Setup.exe';
+export const DOWNLOAD_FILENAME = 'A-Math-Setup-v1.3.2.exe';
 
-export const GITHUB_RELEASE_DOWNLOAD_URL =
-  'https://github.com/MDRWP-GH/amath-website/releases/download/v1.3.1/Setup.exe';
+export const GAME_DOWNLOAD_URL = '/downloads/A-Math-Setup-v1.3.2.exe';
 
 // Production must not silently serve an older installer from a stale Vercel
 // environment variable. Keep the override only for local development.
 export const DOWNLOAD_URL =
   process.env.NODE_ENV === 'production'
-    ? GITHUB_RELEASE_DOWNLOAD_URL
-    : (process.env.NEXT_PUBLIC_DOWNLOAD_URL ?? GITHUB_RELEASE_DOWNLOAD_URL);
+    ? GAME_DOWNLOAD_URL
+    : (process.env.NEXT_PUBLIC_DOWNLOAD_URL ?? GAME_DOWNLOAD_URL);
 
 export const DOWNLOAD_LABEL = DOWNLOAD_FILENAME;
 

@@ -34,9 +34,11 @@ yarn-error.log*
 .env*
 !.env.example
 
-# Windows installer (too large for git)
+# Windows installer: keep only the versioned release published by the website.
 /public/downloads/*
 !/public/downloads/.gitkeep
+!/public/downloads/A-Math-Setup-v1.3.2.exe
+!/public/downloads/A-Math-Setup-v1.3.2.exe.sha256
 
 # vercel
 .vercel
